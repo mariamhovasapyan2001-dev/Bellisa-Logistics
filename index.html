@@ -1,0 +1,1100 @@
+
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101e32">
+<meta name="description" content="Bellisa Logistics — բեռնափոխադրումներ Չինաստանից Հայաստան։ Cargo transportation from China to Armenia.">
+<title>Bellisa Logistics | China to Armenia</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --navy:#101e32;
+  --navy2:#1a304b;
+  --gold:#c8a36b;
+  --gold-light:#e5cda7;
+  --cream:#f8f7f4;
+  --white:#fff;
+  --muted:#697586;
+  --line:#e6e8ec;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:95px}
+body{
+  font-family:'Noto Sans Armenian','Manrope',sans-serif;
+  color:var(--navy);line-height:1.8;background:white
+}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+.container{width:min(1180px,90%);margin:auto}
+.section{padding:100px 0}
+.eyebrow{
+  font:800 11px Manrope,sans-serif;
+  letter-spacing:3px;color:var(--gold);margin-bottom:18px
+}
+.section-title{
+  font-size:clamp(27px,3.4vw,43px);
+  font-weight:800;line-height:1.45;margin-bottom:22px
+}
+.section-desc{color:var(--muted);font-size:14px;line-height:2.1}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:15px 26px;font-size:12px;font-weight:800;
+  border:1px solid transparent;transition:.3s
+}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px)}
+.btn-outline{border-color:rgba(255,255,255,.6);color:white}
+.btn-outline:hover{background:white;color:var(--navy)}
+
+/* HEADER */
+.topbar{
+  background:#0b1727;color:#cbd3de;
+  padding:10px 0;font-size:11px
+}
+.topbar-inner{display:flex;justify-content:space-between;gap:15px}
+.topbar strong{color:var(--gold-light)}
+.header{
+  position:sticky;top:0;z-index:1000;background:white;
+  box-shadow:0 3px 22px rgba(0,0,0,.06)
+}
+.nav{
+  min-height:85px;display:flex;align-items:center;
+  justify-content:space-between;gap:22px
+}
+.brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.brand img{width:62px;height:62px;object-fit:contain}
+.brand-text{
+  font:800 19px Manrope,sans-serif;
+  letter-spacing:1.5px;line-height:1.2
+}
+.brand-text span{
+  display:block;color:var(--gold);
+  font-size:9px;letter-spacing:4px;margin-top:5px
+}
+.nav-links{display:flex;align-items:center;gap:22px}
+.nav-links a{
+  font-size:11px;font-weight:800;
+  white-space:nowrap;transition:.2s
+}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{
+  background:var(--navy);color:white!important;padding:12px 16px
+}
+.languages{
+  display:flex;align-items:center;gap:3px;padding:4px;
+  background:#f6f5f2;border:1px solid var(--line);flex-shrink:0
+}
+.languages button{
+  border:0;background:transparent;color:#667;
+  padding:9px;font:800 11px Manrope,sans-serif
+}
+.languages button.active{background:var(--navy);color:white}
+.menu-toggle{display:none;background:none;border:0;font-size:27px}
+
+/* HERO */
+.hero{
+  min-height:650px;display:flex;align-items:center;
+  position:relative;color:white;
+  background:
+    linear-gradient(90deg,rgba(8,21,38,.96),rgba(8,21,38,.78) 48%,rgba(8,21,38,.3)),
+    url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=2000&q=90')
+    center/cover no-repeat
+}
+.hero-content{max-width:790px;padding:100px 0 130px}
+.hero-label{
+  color:var(--gold-light);
+  font:800 11px Manrope,sans-serif;
+  letter-spacing:3px;margin-bottom:25px
+}
+.hero h1{
+  font-size:clamp(34px,5vw,63px);
+  line-height:1.35;font-weight:800;margin-bottom:25px
+}
+.hero h1 em{color:var(--gold-light);font-style:normal}
+.hero p{
+  max-width:600px;color:#e0e5ec;
+  font-size:14px;line-height:2.1;margin-bottom:35px
+}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:15px}
+.hero-bottom{
+  position:absolute;bottom:0;width:100%;
+  background:rgba(9,22,39,.8);
+  border-top:1px solid rgba(255,255,255,.15)
+}
+.hero-bottom-inner{
+  display:flex;justify-content:space-between;
+  gap:15px;padding:20px 0;font-size:11px
+}
+.hero-bottom span{color:var(--gold-light)}
+
+/* ABOUT */
+.intro-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:75px;align-items:center
+}
+.intro-image{position:relative;padding:0 25px 30px 0}
+.intro-image img{width:100%;height:500px;object-fit:cover}
+.intro-image:after{
+  content:"";position:absolute;right:0;bottom:0;
+  width:70%;height:75%;background:#e9ddcc;z-index:-1
+}
+.intro-badge{
+  position:absolute;bottom:55px;right:-10px;
+  background:var(--navy);color:white;
+  padding:22px;max-width:215px
+}
+.intro-badge strong{
+  display:block;color:var(--gold-light);font:800 20px Manrope
+}
+.intro-badge small{font-size:11px;line-height:1.8}
+.intro-text p{
+  color:var(--muted);font-size:13px;
+  line-height:2.2;margin-bottom:18px
+}
+.intro-points{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:17px;margin-top:25px
+}
+.intro-points div{
+  border-left:2px solid var(--gold);
+  padding-left:13px;font-size:12px;font-weight:700
+}
+
+/* SERVICES — ORIGINAL SHOPIFY IMAGES */
+.services{background:var(--cream)}
+.center-heading{
+  max-width:750px;margin:0 auto 55px;text-align:center
+}
+.services-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:25px
+}
+.service-card{
+  background:white;border:1px solid var(--line);
+  overflow:hidden;transition:.3s
+}
+.service-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 40px rgba(0,0,0,.08)
+}
+.service-image{
+  height:250px;overflow:hidden;background:#f1f1f1
+}
+.service-image img{
+  width:100%;height:100%;
+  object-fit:contain;object-position:center;
+  transition:transform .4s;
+}
+.service-card:hover img{transform:scale(1.035)}
+.service-body{padding:28px}
+.service-number{
+  color:var(--gold);
+  font:800 11px Manrope;letter-spacing:2px
+}
+.service-body h3{
+  font-size:17px;margin:14px 0;line-height:1.6
+}
+.service-body p{
+  font-size:12px;color:var(--muted);line-height:2
+}
+.service-link{
+  display:inline-block;margin-top:20px;
+  border-bottom:1px solid var(--gold);
+  font-size:12px;font-weight:800
+}
+
+/* ROUTE */
+.route{background:var(--navy);color:white}
+.route-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:70px;align-items:center
+}
+.route .section-desc{color:#bec8d5;margin-bottom:18px}
+.route-visual{
+  padding:45px;border:1px solid rgba(255,255,255,.17);
+  background:rgba(255,255,255,.035)
+}
+.route-city{display:flex;align-items:center;gap:20px}
+.route-city .flag{font-size:38px}
+.route-city small{
+  display:block;color:var(--gold-light);
+  font:700 11px Manrope;letter-spacing:2px
+}
+.route-city strong{display:block;font-size:23px}
+.route-line{
+  height:100px;border-left:2px dashed var(--gold);
+  margin:20px 0 20px 19px
+}
+.route-note{
+  margin-top:30px;padding-top:20px;
+  border-top:1px solid rgba(255,255,255,.15);
+  font-size:12px;color:#c4cfdb
+}
+
+/* BENEFITS */
+.benefits-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:22px
+}
+.benefit{
+  border:1px solid var(--line);
+  padding:28px 22px;transition:.3s
+}
+.benefit:hover{background:var(--navy);color:white}
+.benefit-icon{
+  font-size:30px;color:var(--gold);margin-bottom:18px
+}
+.benefit h3{font-size:14px;margin-bottom:12px}
+.benefit p{
+  font-size:12px;color:var(--muted);line-height:2
+}
+.benefit:hover p{color:#c8d1dd}
+
+/* PROCESS */
+.process{background:var(--cream)}
+.process-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:25px
+}
+.process-step{
+  border-top:2px solid var(--gold);padding-top:20px
+}
+.process-step .number{
+  font:800 44px Manrope;color:#dfd2c0;margin-bottom:20px
+}
+.process-step h3{font-size:14px;margin-bottom:12px}
+.process-step p{
+  color:var(--muted);font-size:12px;line-height:2
+}
+
+/* QUOTE */
+.quote-section{background:var(--navy2);color:white}
+.quote-grid{
+  display:grid;grid-template-columns:.85fr 1.15fr;gap:65px
+}
+.quote-section .section-desc{color:#c0cad6}
+.quote-features{
+  margin-top:35px;display:grid;gap:16px
+}
+.quote-features div{font-size:12px}
+.quote-features span{color:var(--gold);margin-right:10px}
+.quote-form{
+  background:white;color:var(--navy);padding:38px
+}
+.quote-form h3{font-size:21px;margin-bottom:8px}
+.quote-form>p{
+  font-size:12px;color:var(--muted);margin-bottom:25px
+}
+.form-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:15px
+}
+.field{margin-bottom:16px}
+.field label{
+  display:block;font-size:11px;
+  font-weight:800;margin-bottom:8px
+}
+.field input,.field select,.field textarea{
+  width:100%;border:1px solid #dce1e6;
+  background:#fafbfc;padding:13px;
+  font-size:12px;color:var(--navy);outline:none
+}
+.field input:focus,.field select:focus,.field textarea:focus{
+  border-color:var(--gold)
+}
+.field textarea{min-height:105px;resize:vertical}
+.form-submit{width:100%;border:0}
+.form-note{
+  margin-top:12px;font-size:10px;color:var(--muted)
+}
+
+/* CONTACT */
+.contact-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:70px;align-items:center
+}
+.contact-details{
+  margin-top:35px;display:grid;gap:24px
+}
+.contact-item{
+  display:flex;align-items:flex-start;gap:18px
+}
+.contact-icon{
+  width:45px;height:45px;flex-shrink:0;
+  display:grid;place-items:center;
+  background:var(--cream);color:var(--gold);font-size:20px
+}
+.contact-item small{
+  display:block;font-size:11px;color:var(--muted)
+}
+.contact-item strong{font-size:13px;overflow-wrap:anywhere}
+.contact-visual{
+  min-height:400px;
+  background:url('https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=1200&q=85')
+  center/cover
+}
+
+/* FOOTER */
+.footer{
+  background:#0b1727;color:white;padding:75px 0 25px
+}
+.footer-grid{
+  display:grid;grid-template-columns:1.5fr 1fr 1fr;
+  gap:60px;margin-bottom:60px
+}
+.footer-logo{font:800 25px Manrope;letter-spacing:2px}
+.footer-logo span{
+  display:block;color:var(--gold);
+  font-size:10px;letter-spacing:5px
+}
+.footer p{
+  font-size:12px;color:#aebac8;
+  margin-top:20px;line-height:2
+}
+.footer h4{font-size:14px;margin-bottom:22px}
+.footer-links{display:grid;gap:13px}
+.footer-links a{color:#b7c1ce;font-size:12px}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{
+  display:flex;justify-content:space-between;gap:20px;
+  border-top:1px solid rgba(255,255,255,.12);
+  padding-top:25px;color:#8796a8;font-size:11px
+}
+
+/* RESPONSIVE */
+@media(max-width:1050px){
+  .nav-links{gap:12px}
+  .nav-links a{font-size:10px}
+}
+@media(max-width:850px){
+  .section{padding:70px 0}
+  .nav{min-height:75px}
+  .brand img{width:50px;height:50px}
+  .brand-text{font-size:16px}
+  .menu-toggle{display:block}
+  .languages{margin-left:auto}
+  .nav-links{
+    display:none;position:absolute;top:100%;left:0;
+    width:100%;background:white;padding:25px 5%;
+    flex-direction:column;align-items:stretch;
+    box-shadow:0 15px 25px rgba(0,0,0,.08)
+  }
+  .nav-links.active{display:flex}
+  .nav-links a{font-size:13px}
+  .intro-grid,.route-grid,.quote-grid,.contact-grid{
+    grid-template-columns:1fr;gap:40px
+  }
+  .services-grid{grid-template-columns:1fr 1fr}
+  .benefits-grid,.process-grid{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:550px){
+  .topbar-inner span:last-child{display:none}
+  .hero{min-height:auto}
+  .hero-content{padding:80px 0}
+  .hero h1{font-size:34px}
+  .hero-bottom{position:relative}
+  .hero-bottom-inner{flex-wrap:wrap}
+  .services-grid,.benefits-grid,.process-grid,
+  .form-grid,.footer-grid{grid-template-columns:1fr}
+  .intro-image img{height:360px}
+  .intro-badge{right:0}
+  .intro-points{grid-template-columns:1fr}
+  .route-visual,.quote-form{padding:25px}
+  .contact-visual{min-height:300px}
+  .footer-bottom{flex-direction:column}
+  .languages button{padding:8px;font-size:10px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span data-i18n="topbar">Չինաստանից Հայաստան՝ վստահելի լոգիստիկ լուծումներ</span>
+    <span><strong>CHINA → ARMENIA</strong> | BELLISA LOGISTICS</span>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container nav">
+    <a href="#home" class="brand">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0733/9681/4030/files/photo_5444936560806666467_y.jpg?v=1794239541"
+        alt="Bellisa Logistics Logo"
+        width="62"
+        height="62"
+      >
+      <div class="brand-text">BELLISA<span>LOGISTICS</span></div>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" data-i18n="navHome">Գլխավոր</a>
+      <a href="#about" data-i18n="navAbout">Մեր մասին</a>
+      <a href="#services" data-i18n="navServices">Ծառայություններ</a>
+      <a href="#advantages" data-i18n="navAdvantages">Առավելություններ</a>
+      <a href="#contact" data-i18n="navContact">Կապ</a>
+      <a href="#quote" class="nav-cta" data-i18n="navQuote">Ստանալ առաջարկ</a>
+    </nav>
+
+    <div class="languages" aria-label="Language selection">
+      <button type="button" data-lang="hy" class="active" aria-pressed="true">HY</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-label">BELLISA LOGISTICS · CHINA TO ARMENIA</div>
+      <h1 data-i18n-html="heroTitle">Ձեր բեռը՝ <em>մեր պատասխանատվությունը</em></h1>
+      <p data-i18n="heroText">
+        Bellisa Logistics-ը առաջարկում է բեռնափոխադրման անհատական լուծումներ Չինաստանից Հայաստան։
+        Մենք օգնում ենք կազմակերպել բեռների տեղափոխման գործընթացը՝ ուշադրություն դարձնելով
+        յուրաքանչյուր հաճախորդի պահանջներին։
+      </p>
+      <div class="hero-buttons">
+        <a href="#quote" class="btn btn-gold" data-i18n="heroBtn1">Ստանալ գնային առաջարկ →</a>
+        <a href="#about" class="btn btn-outline" data-i18n="heroBtn2">Բացահայտել ավելին</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-bottom">
+    <div class="container hero-bottom-inner">
+      <div><span>01 /</span> <span data-i18n="heroPoint1">Անհատական մոտեցում</span></div>
+      <div><span>02 /</span> <span data-i18n="heroPoint2">Լոգիստիկ կազմակերպում</span></div>
+      <div><span>03 /</span> <span data-i18n="heroPoint3">Չինաստան — Հայաստան</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container intro-grid">
+    <div class="intro-image">
+      <img
+        src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1100&q=85"
+        alt="Logistics warehouse"
+        loading="lazy"
+      >
+      <div class="intro-badge">
+        <strong>BELLISA</strong>
+        <small data-i18n="aboutBadge">Ձեր վստահելի գործընկերը բեռնափոխադրումների ոլորտում</small>
+      </div>
+    </div>
+
+    <div class="intro-text">
+      <div class="eyebrow">ABOUT OUR COMPANY</div>
+      <h2 class="section-title" data-i18n="aboutTitle">Լոգիստիկան՝ կառուցված վստահության վրա</h2>
+      <p data-i18n="aboutP1">Bellisa Logistics-ը բեռնափոխադրումների ոլորտում գործող ընկերություն է, որի գործունեության հիմնական ուղղությունը Չինաստանից Հայաստան բեռների տեղափոխման կազմակերպումն է։</p>
+      <p data-i18n="aboutP2">Մենք հասկանում ենք, որ յուրաքանչյուր բեռ կարևոր նշանակություն ունի իր սեփականատիրոջ համար։ Այդ պատճառով մեր աշխատանքում առաջնահերթություն ենք տալիս հստակ հաղորդակցությանը, պատասխանատու մոտեցմանը և արդյունավետ կազմակերպմանը։</p>
+      <p data-i18n="aboutP3">Մեր նպատակն է բեռնափոխադրումների գործընթացը դարձնել հնարավորինս պարզ և հասկանալի՝ օգնելով հաճախորդներին ընտրել իրենց պահանջներին համապատասխան լուծումները։</p>
+      <div class="intro-points">
+        <div data-i18n="aboutPoint1">Բիզնեսի համար լուծումներ</div>
+        <div data-i18n="aboutPoint2">Անհատական խորհրդատվություն</div>
+        <div data-i18n="aboutPoint3">Փոխադրման կազմակերպում</div>
+        <div data-i18n="aboutPoint4">Հաճախորդակենտրոն սպասարկում</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES WITH YOUR THREE IMAGES -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="center-heading">
+      <div class="eyebrow">OUR SERVICES</div>
+      <h2 class="section-title" data-i18n="servicesTitle">Մեր ծառայությունները</h2>
+      <p class="section-desc" data-i18n="servicesDesc">Բեռնափոխադրման լուծումներ՝ հարմարեցված ձեր բեռի առանձնահատկություններին և բիզնեսի կարիքներին։</p>
+    </div>
+
+    <div class="services-grid">
+
+      <article class="service-card">
+        <div class="service-image">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0733/9681/4030/files/3_10077d6e-18b8-4b10-8453-b1e8c481e148.png?v=1794243470"
+            alt="Bellisa Logistics cargo transportation"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+        <div class="service-body">
+          <div class="service-number">SERVICE / 01</div>
+          <h3 data-i18n="service1Title">Բեռնափոխադրումներ Չինաստանից</h3>
+          <p data-i18n="service1Desc">Չինաստանից Հայաստան բեռների տեղափոխման կազմակերպում՝ հաշվի առնելով բեռի տեսակը, ծավալը և հաճախորդի պահանջները։</p>
+          <a href="#quote" class="service-link" data-i18n="serviceLink">Հարցում ուղարկել →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-image">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0733/9681/4030/files/0990ac1f4de2a68dd9cdc3ac282a2f1b.png?v=1794243469"
+            alt="Bellisa Logistics commercial cargo"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+        <div class="service-body">
+          <div class="service-number">SERVICE / 02</div>
+          <h3 data-i18n="service2Title">Առևտրային բեռների տեղափոխում</h3>
+          <p data-i18n="service2Desc">Լոգիստիկ աջակցություն ձեռնարկատերերին և ընկերություններին, որոնք ապրանքներ են ներմուծում Չինաստանից Հայաստան։</p>
+          <a href="#quote" class="service-link" data-i18n="serviceLink">Հարցում ուղարկել →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-image">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0733/9681/4030/files/71a22af4766db65f3a830b4c2acdb1fe.png?v=1794243468"
+            alt="Bellisa Logistics solutions"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+        <div class="service-body">
+          <div class="service-number">SERVICE / 03</div>
+          <h3 data-i18n="service3Title">Լոգիստիկ խորհրդատվություն</h3>
+          <p data-i18n="service3Desc">Օգնություն փոխադրման գործընթացի պլանավորման, անհրաժեշտ տվյալների հստակեցման և համապատասխան լուծման ընտրության հարցերում։</p>
+          <a href="#quote" class="service-link" data-i18n="serviceLink">Հարցում ուղարկել →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ROUTE -->
+<section class="section route">
+  <div class="container route-grid">
+    <div>
+      <div class="eyebrow">OUR MAIN DIRECTION</div>
+      <h2 class="section-title" data-i18n="routeTitle">Չինաստանից Հայաստան՝ մեկ վստահելի գործընկեր</h2>
+      <p class="section-desc" data-i18n="routeP1">Միջազգային բեռնափոխադրումը պահանջում է համակարգված աշխատանք, մանրուքների նկատմամբ ուշադրություն և ճիշտ պլանավորում։</p>
+      <p class="section-desc" data-i18n="routeP2">Bellisa Logistics-ի նպատակն է աջակցել հաճախորդներին այդ ճանապարհի ընթացքում՝ սկսած նախնական հարցումից մինչև բեռի տեղափոխման կազմակերպումը։</p>
+      <a href="#quote" class="btn btn-gold" style="margin-top:30px" data-i18n="routeBtn">Պլանավորել փոխադրումը →</a>
+    </div>
+
+    <div class="route-visual">
+      <div class="route-city">
+        <div class="flag">🇨🇳</div>
+        <div><small>ORIGIN</small><strong data-i18n="china">Չինաստան</strong></div>
+      </div>
+      <div class="route-line"></div>
+      <div class="route-city">
+        <div class="flag">🇦🇲</div>
+        <div><small>DESTINATION</small><strong data-i18n="armenia">Հայաստան</strong></div>
+      </div>
+      <div class="route-note" data-i18n="routeNote">Մեկ ուղղություն։ Անհատական լուծումներ։ Պատասխանատու համագործակցություն։</div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section" id="advantages">
+  <div class="container">
+    <div class="center-heading">
+      <div class="eyebrow">WHY CHOOSE BELLISA</div>
+      <h2 class="section-title" data-i18n="benefitsTitle">Ինչո՞ւ ընտրել Bellisa Logistics-ը</h2>
+      <p class="section-desc" data-i18n="benefitsDesc">Մեր աշխատանքի հիմքում հաճախորդի կարիքների ըմբռնումն ու երկարաժամկետ համագործակցության ձգտումն են։</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit">
+        <div class="benefit-icon">◈</div>
+        <h3 data-i18n="benefit1Title">Անհատական մոտեցում</h3>
+        <p data-i18n="benefit1Desc">Յուրաքանչյուր հարցում դիտարկվում է՝ հաշվի առնելով բեռի և հաճախորդի առանձնահատկությունները։</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">◇</div>
+        <h3 data-i18n="benefit2Title">Պատասխանատվություն</h3>
+        <p data-i18n="benefit2Desc">Մենք կարևորում ենք փոխադրման գործընթացի կազմակերպվածությունն ու հաճախորդի վստահությունը։</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">◎</div>
+        <h3 data-i18n="benefit3Title">Հստակ հաղորդակցություն</h3>
+        <p data-i18n="benefit3Desc">Ձգտում ենք հաճախորդին տրամադրել անհրաժեշտ տեղեկատվություն համագործակցության յուրաքանչյուր փուլում։</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">✧</div>
+        <h3 data-i18n="benefit4Title">Ճկուն լուծումներ</h3>
+        <p data-i18n="benefit4Desc">Փոխադրման տարբերակները քննարկվում են ըստ բեռի չափերի, բնույթի և անհատական պահանջների։</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section process">
+  <div class="container">
+    <div class="center-heading">
+      <div class="eyebrow">HOW WE WORK</div>
+      <h2 class="section-title" data-i18n="processTitle">Ինչպե՞ս ենք աշխատում</h2>
+      <p class="section-desc" data-i18n="processDesc">Պարզ և հասկանալի համագործակցության գործընթաց՝ առաջին հարցումից մինչև բեռնափոխադրման կազմակերպում։</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="number">01</div>
+        <h3 data-i18n="step1Title">Ուղարկեք հարցում</h3>
+        <p data-i18n="step1Desc">Ներկայացրեք բեռի տեսակը, քաշը, ծավալը և տեղափոխման ուղղությունը։</p>
+      </div>
+      <div class="process-step">
+        <div class="number">02</div>
+        <h3 data-i18n="step2Title">Ստացեք խորհրդատվություն</h3>
+        <p data-i18n="step2Desc">Քննարկում ենք ձեր պահանջները և փոխադրման հնարավոր տարբերակները։</p>
+      </div>
+      <div class="process-step">
+        <div class="number">03</div>
+        <h3 data-i18n="step3Title">Համաձայնեցրեք պայմանները</h3>
+        <p data-i18n="step3Desc">Հստակեցնում ենք փոխադրման կազմակերպման պայմաններն ու անհրաժեշտ մանրամասները։</p>
+      </div>
+      <div class="process-step">
+        <div class="number">04</div>
+        <h3 data-i18n="step4Title">Կազմակերպում ենք փոխադրումը</h3>
+        <p data-i18n="step4Desc">Համաձայնեցված պայմաններով անցնում ենք բեռնափոխադրման կազմակերպման փուլին։</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE FORM -->
+<section class="section quote-section" id="quote">
+  <div class="container quote-grid">
+    <div>
+      <div class="eyebrow">REQUEST A QUOTE</div>
+      <h2 class="section-title" data-i18n="quoteTitle">Պատրա՞ստ եք կազմակերպել ձեր հաջորդ բեռնափոխադրումը</h2>
+      <p class="section-desc" data-i18n="quoteDesc">Լրացրեք հարցման ձևը՝ նշելով ձեր բեռի մասին հիմնական տվյալները։ Մենք կկարողանանք քննարկել ձեր պահանջները և առաջարկի հնարավորությունը։</p>
+      <div class="quote-features">
+        <div><span>✓</span> <span data-i18n="quoteFeature1">Անհատական հարցումների քննարկում</span></div>
+        <div><span>✓</span> <span data-i18n="quoteFeature2">Բեռի առանձնահատկությունների գնահատում</span></div>
+        <div><span>✓</span> <span data-i18n="quoteFeature3">Չինաստան–Հայաստան ուղղություն</span></div>
+      </div>
+    </div>
+
+    <form class="quote-form" id="quoteForm">
+      <h3 data-i18n="formTitle">Ստանալ գնային առաջարկ</h3>
+      <p data-i18n="formDesc">Լրացրեք տվյալները՝ հարցումը պատրաստելու համար։</p>
+
+      <div class="form-grid">
+        <div class="field">
+          <label for="clientName" data-i18n="fieldName">Անուն, ազգանուն *</label>
+          <input id="clientName" type="text" required data-i18n-placeholder="placeholderName" placeholder="Ձեր անունը">
+        </div>
+        <div class="field">
+          <label for="clientPhone" data-i18n="fieldPhone">Հեռախոսահամար *</label>
+          <input id="clientPhone" type="tel" required placeholder="+374 ...">
+        </div>
+      </div>
+
+      <div class="form-grid">
+        <div class="field">
+          <label for="cargoType" data-i18n="fieldCargo">Բեռի տեսակ</label>
+          <select id="cargoType">
+            <option value="" data-i18n="optionSelect">Ընտրել</option>
+            <option value="clothing" data-i18n="optionClothing">Հագուստ և տեքստիլ</option>
+            <option value="equipment" data-i18n="optionEquipment">Սարքավորումներ</option>
+            <option value="household" data-i18n="optionHousehold">Կենցաղային ապրանքներ</option>
+            <option value="commercial" data-i18n="optionCommercial">Առևտրային ապրանքներ</option>
+            <option value="other" data-i18n="optionOther">Այլ</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="cargoWeight" data-i18n="fieldWeight">Մոտավոր քաշ (կգ)</label>
+          <input id="cargoWeight" type="number" min="0" step="any" data-i18n-placeholder="placeholderWeight" placeholder="Օրինակ՝ 100">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="cargoCity" data-i18n="fieldCity">Բեռի գտնվելու քաղաքը Չինաստանում</label>
+        <input id="cargoCity" type="text" placeholder="Guangzhou">
+      </div>
+
+      <div class="field">
+        <label for="cargoMessage" data-i18n="fieldMessage">Լրացուցիչ տեղեկություն</label>
+        <textarea id="cargoMessage" data-i18n-placeholder="placeholderMessage" placeholder="Նկարագրեք ձեր բեռը, ծավալը և այլ մանրամասներ"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-gold form-submit" data-i18n="formSubmit">Պատրաստել հարցումը →</button>
+      <p class="form-note" data-i18n="formNote">Կոճակը պատրաստում է էլեկտրոնային նամակ։ Ուղարկելու համար անհրաժեշտ է սահմանել ընկերության իրական էլ․ հասցեն։</p>
+    </form>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container contact-grid">
+    <div>
+      <div class="eyebrow">CONTACT US</div>
+      <h2 class="section-title" data-i18n="contactTitle">Կապ հաստատեք մեզ հետ</h2>
+      <p class="section-desc" data-i18n="contactDesc">Ունե՞ք հարցեր Չինաստանից Հայաստան բեռնափոխադրումների վերաբերյալ։ Կապ հաստատեք Bellisa Logistics-ի հետ՝ համագործակցության հնարավորությունները քննարկելու համար։</p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <div class="contact-icon">✉</div>
+          <div>
+            <small data-i18n="contactEmailLabel">Էլեկտրոնային հասցե</small>
+            <strong id="contactEmail" data-i18n="contactEmailValue">Ավելացնել ընկերության էլ․ հասցեն</strong>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">☎</div>
+          <div>
+            <small data-i18n="contactPhoneLabel">Հեռախոսահամար</small>
+            <strong id="contactPhone" data-i18n="contactPhoneValue">Ավելացնել ընկերության հեռախոսահամարը</strong>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">⌖</div>
+          <div>
+            <small data-i18n="contactDirectionLabel">Փոխադրման հիմնական ուղղություն</small>
+            <strong data-i18n="heroPoint3">Չինաստան — Հայաստան</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-visual" role="img" aria-label="International cargo logistics"></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">BELLISA<span>LOGISTICS</span></div>
+        <p data-i18n="footerDesc">Bellisa Logistics — բեռնափոխադրումների կազմակերպում Չինաստանից Հայաստան։ Անհատական մոտեցում, հստակ համագործակցություն և լոգիստիկ լուծումներ։</p>
+      </div>
+      <div>
+        <h4 data-i18n="footerLinksTitle">Արագ հղումներ</h4>
+        <div class="footer-links">
+          <a href="#home" data-i18n="navHome">Գլխավոր</a>
+          <a href="#about" data-i18n="navAbout">Մեր մասին</a>
+          <a href="#services" data-i18n="navServices">Ծառայություններ</a>
+          <a href="#advantages" data-i18n="navAdvantages">Առավելություններ</a>
+          <a href="#contact" data-i18n="navContact">Կապ</a>
+        </div>
+      </div>
+      <div>
+        <h4 data-i18n="footerDirectionTitle">Մեր ուղղությունը</h4>
+        <div class="footer-links">
+          <a href="#services" data-i18n="heroPoint3">Չինաստան — Հայաստան</a>
+          <a href="#services" data-i18n="footerCargo">Բեռնափոխադրումներ</a>
+          <a href="#services" data-i18n="service3Title">Լոգիստիկ խորհրդատվություն</a>
+          <a href="#quote" data-i18n="navQuote">Ստանալ առաջարկ</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Bellisa Logistics. All rights reserved.</span>
+      <span>CHINA · ARMENIA · LOGISTICS</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ======================================================
+   BELLISA LOGISTICS — FULL MULTILINGUAL TRANSLATIONS
+   HY / EN / RU
+====================================================== */
+
+const translations = {
+hy: {
+topbar:"Չինաստանից Հայաստան՝ վստահելի լոգիստիկ լուծումներ",
+navHome:"Գլխավոր",navAbout:"Մեր մասին",navServices:"Ծառայություններ",navAdvantages:"Առավելություններ",navContact:"Կապ",navQuote:"Ստանալ առաջարկ",
+heroTitle:"Ձեր բեռը՝ <em>մեր պատասխանատվությունը</em>",
+heroText:"Bellisa Logistics-ը առաջարկում է բեռնափոխադրման անհատական լուծումներ Չինաստանից Հայաստան։ Մենք օգնում ենք կազմակերպել բեռների տեղափոխման գործընթացը՝ ուշադրություն դարձնելով յուրաքանչյուր հաճախորդի պահանջներին։",
+heroBtn1:"Ստանալ գնային առաջարկ →",heroBtn2:"Բացահայտել ավելին",
+heroPoint1:"Անհատական մոտեցում",heroPoint2:"Լոգիստիկ կազմակերպում",heroPoint3:"Չինաստան — Հայաստան",
+aboutBadge:"Ձեր վստահելի գործընկերը բեռնափոխադրումների ոլորտում",
+aboutTitle:"Լոգիստիկան՝ կառուցված վստահության վրա",
+aboutP1:"Bellisa Logistics-ը բեռնափոխադրումների ոլորտում գործող ընկերություն է, որի գործունեության հիմնական ուղղությունը Չինաստանից Հայաստան բեռների տեղափոխման կազմակերպումն է։",
+aboutP2:"Մենք հասկանում ենք, որ յուրաքանչյուր բեռ կարևոր նշանակություն ունի իր սեփականատիրոջ համար։ Այդ պատճառով մեր աշխատանքում առաջնահերթություն ենք տալիս հստակ հաղորդակցությանը, պատասխանատու մոտեցմանը և արդյունավետ կազմակերպմանը։",
+aboutP3:"Մեր նպատակն է բեռնափոխադրումների գործընթացը դարձնել հնարավորինս պարզ և հասկանալի՝ օգնելով հաճախորդներին ընտրել իրենց պահանջներին համապատասխան լուծումները։",
+aboutPoint1:"Բիզնեսի համար լուծումներ",aboutPoint2:"Անհատական խորհրդատվություն",aboutPoint3:"Փոխադրման կազմակերպում",aboutPoint4:"Հաճախորդակենտրոն սպասարկում",
+servicesTitle:"Մեր ծառայությունները",
+servicesDesc:"Բեռնափոխադրման լուծումներ՝ հարմարեցված ձեր բեռի առանձնահատկություններին և բիզնեսի կարիքներին։",
+service1Title:"Բեռնափոխադրումներ Չինաստանից",service1Desc:"Չինաստանից Հայաստան բեռների տեղափոխման կազմակերպում՝ հաշվի առնելով բեռի տեսակը, ծավալը և հաճախորդի պահանջները։",
+service2Title:"Առևտրային բեռների տեղափոխում",service2Desc:"Լոգիստիկ աջակցություն ձեռնարկատերերին և ընկերություններին, որոնք ապրանքներ են ներմուծում Չինաստանից Հայաստան։",
+service3Title:"Լոգիստիկ խորհրդատվություն",service3Desc:"Օգնություն փոխադրման գործընթացի պլանավորման, անհրաժեշտ տվյալների հստակեցման և համապատասխան լուծման ընտրության հարցերում։",
+serviceLink:"Հարցում ուղարկել →",
+routeTitle:"Չինաստանից Հայաստան՝ մեկ վստահելի գործընկեր",
+routeP1:"Միջազգային բեռնափոխադրումը պահանջում է համակարգված աշխատանք, մանրուքների նկատմամբ ուշադրություն և ճիշտ պլանավորում։",
+routeP2:"Bellisa Logistics-ի նպատակն է աջակցել հաճախորդներին այդ ճանապարհի ընթացքում՝ սկսած նախնական հարցումից մինչև բեռի տեղափոխման կազմակերպումը։",
+routeBtn:"Պլանավորել փոխադրումը →",china:"Չինաստան",armenia:"Հայաստան",
+routeNote:"Մեկ ուղղություն։ Անհատական լուծումներ։ Պատասխանատու համագործակցություն։",
+benefitsTitle:"Ինչո՞ւ ընտրել Bellisa Logistics-ը",
+benefitsDesc:"Մեր աշխատանքի հիմքում հաճախորդի կարիքների ըմբռնումն ու երկարաժամկետ համագործակցության ձգտումն են։",
+benefit1Title:"Անհատական մոտեցում",benefit1Desc:"Յուրաքանչյուր հարցում դիտարկվում է՝ հաշվի առնելով բեռի և հաճախորդի առանձնահատկությունները։",
+benefit2Title:"Պատասխանատվություն",benefit2Desc:"Մենք կարևորում ենք փոխադրման գործընթացի կազմակերպվածությունն ու հաճախորդի վստահությունը։",
+benefit3Title:"Հստակ հաղորդակցություն",benefit3Desc:"Ձգտում ենք հաճախորդին տրամադրել անհրաժեշտ տեղեկատվություն համագործակցության յուրաքանչյուր փուլում։",
+benefit4Title:"Ճկուն լուծումներ",benefit4Desc:"Փոխադրման տարբերակները քննարկվում են ըստ բեռի չափերի, բնույթի և անհատական պահանջների։",
+processTitle:"Ինչպե՞ս ենք աշխատում",
+processDesc:"Պարզ և հասկանալի համագործակցության գործընթաց՝ առաջին հարցումից մինչև բեռնափոխադրման կազմակերպում։",
+step1Title:"Ուղարկեք հարցում",step1Desc:"Ներկայացրեք բեռի տեսակը, քաշը, ծավալը և տեղափոխման ուղղությունը։",
+step2Title:"Ստացեք խորհրդատվություն",step2Desc:"Քննարկում ենք ձեր պահանջները և փոխադրման հնարավոր տարբերակները։",
+step3Title:"Համաձայնեցրեք պայմանները",step3Desc:"Հստակեցնում ենք փոխադրման կազմակերպման պայմաններն ու անհրաժեշտ մանրամասները։",
+step4Title:"Կազմակերպում ենք փոխադրումը",step4Desc:"Համաձայնեցված պայմաններով անցնում ենք բեռնափոխադրման կազմակերպման փուլին։",
+quoteTitle:"Պատրա՞ստ եք կազմակերպել ձեր հաջորդ բեռնափոխադրումը",
+quoteDesc:"Լրացրեք հարցման ձևը՝ նշելով ձեր բեռի մասին հիմնական տվյալները։ Մենք կկարողանանք քննարկել ձեր պահանջները և առաջարկի հնարավորությունը։",
+quoteFeature1:"Անհատական հարցումների քննարկում",quoteFeature2:"Բեռի առանձնահատկությունների գնահատում",quoteFeature3:"Չինաստան–Հայաստան ուղղություն",
+formTitle:"Ստանալ գնային առաջարկ",formDesc:"Լրացրեք տվյալները՝ հարցումը պատրաստելու համար։",
+fieldName:"Անուն, ազգանուն *",fieldPhone:"Հեռախոսահամար *",fieldCargo:"Բեռի տեսակ",fieldWeight:"Մոտավոր քաշ (կգ)",fieldCity:"Բեռի գտնվելու քաղաքը Չինաստանում",fieldMessage:"Լրացուցիչ տեղեկություն",
+placeholderName:"Ձեր անունը",placeholderWeight:"Օրինակ՝ 100",placeholderMessage:"Նկարագրեք ձեր բեռը, ծավալը և այլ մանրամասներ",
+optionSelect:"Ընտրել",optionClothing:"Հագուստ և տեքստիլ",optionEquipment:"Սարքավորումներ",optionHousehold:"Կենցաղային ապրանքներ",optionCommercial:"Առևտրային ապրանքներ",optionOther:"Այլ",
+formSubmit:"Պատրաստել հարցումը →",formNote:"Կոճակը պատրաստում է էլեկտրոնային նամակ։ Ուղարկելու համար անհրաժեշտ է սահմանել ընկերության իրական էլ․ հասցեն։",
+contactTitle:"Կապ հաստատեք մեզ հետ",
+contactDesc:"Ունե՞ք հարցեր Չինաստանից Հայաստան բեռնափոխադրումների վերաբերյալ։ Կապ հաստատեք Bellisa Logistics-ի հետ՝ համագործակցության հնարավորությունները քննարկելու համար։",
+contactEmailLabel:"Էլեկտրոնային հասցե",contactEmailValue:"Ավելացնել ընկերության էլ․ հասցեն",
+contactPhoneLabel:"Հեռախոսահամար",contactPhoneValue:"Ավելացնել ընկերության հեռախոսահամարը",
+contactDirectionLabel:"Փոխադրման հիմնական ուղղություն",
+footerDesc:"Bellisa Logistics — բեռնափոխադրումների կազմակերպում Չինաստանից Հայաստան։ Անհատական մոտեցում, հստակ համագործակցություն և լոգիստիկ լուծումներ։",
+footerLinksTitle:"Արագ հղումներ",footerDirectionTitle:"Մեր ուղղությունը",footerCargo:"Բեռնափոխադրումներ",
+emailWarning:"Հարցման ուղարկումը դեռ ակտիվ չէ։ Անհրաժեշտ է ավելացնել ընկերության էլեկտրոնային հասցեն։",
+emailSubject:"Բեռնափոխադրման հարցում — Bellisa Logistics",
+emailGreeting:"Բարև Ձեզ,",
+emailIntro:"Ցանկանում եմ ստանալ բեռնափոխադրման առաջարկ։"
+},
+en: {
+topbar:"Reliable logistics solutions from China to Armenia",
+navHome:"Home",navAbout:"About Us",navServices:"Services",navAdvantages:"Advantages",navContact:"Contact",navQuote:"Get a Quote",
+heroTitle:"Your Cargo, <em>Our Responsibility</em>",
+heroText:"Bellisa Logistics offers personalized cargo transportation solutions from China to Armenia. We help organize shipments with attention to each customer's specific requirements.",
+heroBtn1:"Request a Quote →",heroBtn2:"Discover More",
+heroPoint1:"Personalized Approach",heroPoint2:"Logistics Coordination",heroPoint3:"China — Armenia",
+aboutBadge:"Your trusted partner in cargo transportation",
+aboutTitle:"Logistics Built on Trust",
+aboutP1:"Bellisa Logistics is a cargo transportation company specializing in organizing shipments from China to Armenia.",
+aboutP2:"We understand that every shipment matters to its owner. That is why we prioritize clear communication, a responsible approach, and effective coordination throughout our work.",
+aboutP3:"Our goal is to make cargo transportation as straightforward and understandable as possible, helping customers choose solutions that meet their requirements.",
+aboutPoint1:"Business Logistics Solutions",aboutPoint2:"Personalized Consultation",aboutPoint3:"Shipment Coordination",aboutPoint4:"Customer-Focused Service",
+servicesTitle:"Our Services",
+servicesDesc:"Cargo transportation solutions tailored to the characteristics of your shipment and your business needs.",
+service1Title:"Cargo Transportation from China",service1Desc:"Organization of shipments from China to Armenia, considering cargo type, volume, and customer requirements.",
+service2Title:"Commercial Cargo Transportation",service2Desc:"Logistics support for entrepreneurs and companies importing goods from China to Armenia.",
+service3Title:"Logistics Consulting",service3Desc:"Assistance with shipment planning, clarifying necessary information, and selecting suitable logistics solutions.",
+serviceLink:"Send an Inquiry →",
+routeTitle:"From China to Armenia — One Trusted Partner",
+routeP1:"International cargo transportation requires coordinated operations, attention to detail, and careful planning.",
+routeP2:"Bellisa Logistics aims to support customers throughout this journey, from the initial inquiry to organizing cargo transportation.",
+routeBtn:"Plan Your Shipment →",china:"China",armenia:"Armenia",
+routeNote:"One direction. Personalized solutions. Responsible cooperation.",
+benefitsTitle:"Why Choose Bellisa Logistics",
+benefitsDesc:"Understanding customer needs and building long-term relationships are at the heart of our approach.",
+benefit1Title:"Personalized Approach",benefit1Desc:"Every inquiry is considered with attention to the specific needs of the customer and the shipment.",
+benefit2Title:"Responsibility",benefit2Desc:"We value organized transportation processes and the trust of our customers.",
+benefit3Title:"Clear Communication",benefit3Desc:"We aim to provide customers with relevant information at every stage of cooperation.",
+benefit4Title:"Flexible Solutions",benefit4Desc:"Transportation options are discussed according to cargo dimensions, characteristics, and individual requirements.",
+processTitle:"How We Work",
+processDesc:"A simple and transparent cooperation process, from your first inquiry to shipment coordination.",
+step1Title:"Send an Inquiry",step1Desc:"Provide the cargo type, weight, volume, and transportation direction.",
+step2Title:"Receive a Consultation",step2Desc:"We discuss your requirements and possible transportation options.",
+step3Title:"Agree on the Terms",step3Desc:"We clarify the transportation conditions and necessary details.",
+step4Title:"Arrange Transportation",step4Desc:"We proceed with organizing the shipment under the agreed conditions.",
+quoteTitle:"Ready to Arrange Your Next Shipment?",
+quoteDesc:"Complete the inquiry form with the main details of your cargo. We can then discuss your requirements and potential transportation options.",
+quoteFeature1:"Individual Inquiry Review",quoteFeature2:"Cargo Requirements Assessment",quoteFeature3:"China–Armenia Route",
+formTitle:"Request a Quote",formDesc:"Enter your details to prepare an inquiry.",
+fieldName:"Full Name *",fieldPhone:"Phone Number *",fieldCargo:"Cargo Type",fieldWeight:"Approximate Weight (kg)",fieldCity:"Cargo Location in China",fieldMessage:"Additional Information",
+placeholderName:"Your name",placeholderWeight:"Example: 100",placeholderMessage:"Describe your cargo, volume, and other details",
+optionSelect:"Select",optionClothing:"Clothing and Textiles",optionEquipment:"Equipment",optionHousehold:"Household Goods",optionCommercial:"Commercial Goods",optionOther:"Other",
+formSubmit:"Prepare Inquiry →",formNote:"This button prepares an email in your mail application. The company's real email address must be configured first.",
+contactTitle:"Get in Touch",
+contactDesc:"Have questions about cargo transportation from China to Armenia? Contact Bellisa Logistics to discuss potential cooperation.",
+contactEmailLabel:"Email Address",contactEmailValue:"Add company email address",
+contactPhoneLabel:"Phone Number",contactPhoneValue:"Add company phone number",
+contactDirectionLabel:"Main Transportation Route",
+footerDesc:"Bellisa Logistics — cargo transportation coordination from China to Armenia. Personalized service, clear cooperation, and logistics solutions.",
+footerLinksTitle:"Quick Links",footerDirectionTitle:"Our Route",footerCargo:"Cargo Transportation",
+emailWarning:"Inquiry sending is not yet configured. Please add the company's email address.",
+emailSubject:"Cargo Transportation Inquiry — Bellisa Logistics",
+emailGreeting:"Hello,",
+emailIntro:"I would like to request a cargo transportation quote."
+},
+ru: {
+topbar:"Надёжные логистические решения из Китая в Армению",
+navHome:"Главная",navAbout:"О нас",navServices:"Услуги",navAdvantages:"Преимущества",navContact:"Контакты",navQuote:"Получить расчёт",
+heroTitle:"Ваш груз — <em>наша ответственность</em>",
+heroText:"Bellisa Logistics предлагает индивидуальные решения по грузоперевозкам из Китая в Армению. Мы помогаем организовать доставку с учётом требований каждого клиента.",
+heroBtn1:"Получить расчёт →",heroBtn2:"Узнать больше",
+heroPoint1:"Индивидуальный подход",heroPoint2:"Организация логистики",heroPoint3:"Китай — Армения",
+aboutBadge:"Ваш надёжный партнёр в сфере грузоперевозок",
+aboutTitle:"Логистика, основанная на доверии",
+aboutP1:"Bellisa Logistics — компания в сфере грузоперевозок, основным направлением деятельности которой является организация доставки грузов из Китая в Армению.",
+aboutP2:"Мы понимаем, что каждый груз имеет большое значение для своего владельца. Поэтому мы уделяем особое внимание прозрачному общению, ответственному подходу и эффективной организации работы.",
+aboutP3:"Наша цель — сделать процесс грузоперевозок максимально простым и понятным, помогая клиентам выбирать решения, соответствующие их потребностям.",
+aboutPoint1:"Решения для бизнеса",aboutPoint2:"Индивидуальные консультации",aboutPoint3:"Организация перевозок",aboutPoint4:"Клиентоориентированный сервис",
+servicesTitle:"Наши услуги",
+servicesDesc:"Логистические решения с учётом особенностей вашего груза и потребностей бизнеса.",
+service1Title:"Грузоперевозки из Китая",service1Desc:"Организация перевозки грузов из Китая в Армению с учётом типа, объёма груза и требований клиента.",
+service2Title:"Перевозка коммерческих грузов",service2Desc:"Логистическая поддержка предпринимателей и компаний, импортирующих товары из Китая в Армению.",
+service3Title:"Логистические консультации",service3Desc:"Помощь в планировании перевозок, уточнении необходимых данных и выборе подходящих логистических решений.",
+serviceLink:"Отправить запрос →",
+routeTitle:"Из Китая в Армению — один надёжный партнёр",
+routeP1:"Международные грузоперевозки требуют слаженной работы, внимания к деталям и грамотного планирования.",
+routeP2:"Цель Bellisa Logistics — сопровождать клиентов на этом пути: от первоначального запроса до организации перевозки груза.",
+routeBtn:"Запланировать перевозку →",china:"Китай",armenia:"Армения",
+routeNote:"Одно направление. Индивидуальные решения. Ответственное сотрудничество.",
+benefitsTitle:"Почему выбирают Bellisa Logistics",
+benefitsDesc:"В основе нашей работы — понимание потребностей клиентов и стремление к долгосрочному сотрудничеству.",
+benefit1Title:"Индивидуальный подход",benefit1Desc:"Каждый запрос рассматривается с учётом особенностей груза и потребностей клиента.",
+benefit2Title:"Ответственность",benefit2Desc:"Мы ценим организованность процесса перевозки и доверие наших клиентов.",
+benefit3Title:"Прозрачная коммуникация",benefit3Desc:"Мы стремимся предоставлять клиентам необходимую информацию на каждом этапе сотрудничества.",
+benefit4Title:"Гибкие решения",benefit4Desc:"Варианты перевозки обсуждаются с учётом размеров, характеристик груза и индивидуальных требований.",
+processTitle:"Как мы работаем",
+processDesc:"Простой и понятный процесс сотрудничества — от первого обращения до организации грузоперевозки.",
+step1Title:"Отправьте запрос",step1Desc:"Укажите тип груза, вес, объём и направление перевозки.",
+step2Title:"Получите консультацию",step2Desc:"Мы обсудим ваши требования и возможные варианты перевозки.",
+step3Title:"Согласуйте условия",step3Desc:"Уточняем условия организации перевозки и необходимые детали.",
+step4Title:"Организуем перевозку",step4Desc:"Приступаем к организации перевозки на согласованных условиях.",
+quoteTitle:"Готовы организовать следующую грузоперевозку?",
+quoteDesc:"Заполните форму, указав основные данные о вашем грузе. Мы сможем обсудить ваши требования и возможные варианты перевозки.",
+quoteFeature1:"Рассмотрение индивидуальных запросов",quoteFeature2:"Оценка характеристик груза",quoteFeature3:"Направление Китай–Армения",
+formTitle:"Получить расчёт",formDesc:"Заполните данные для подготовки запроса.",
+fieldName:"Имя и фамилия *",fieldPhone:"Номер телефона *",fieldCargo:"Тип груза",fieldWeight:"Примерный вес (кг)",fieldCity:"Город нахождения груза в Китае",fieldMessage:"Дополнительная информация",
+placeholderName:"Ваше имя",placeholderWeight:"Например: 100",placeholderMessage:"Опишите ваш груз, объём и другие детали",
+optionSelect:"Выбрать",optionClothing:"Одежда и текстиль",optionEquipment:"Оборудование",optionHousehold:"Товары для дома",optionCommercial:"Коммерческие товары",optionOther:"Другое",
+formSubmit:"Подготовить запрос →",formNote:"Кнопка подготавливает письмо в почтовом приложении. Сначала необходимо указать настоящий email компании.",
+contactTitle:"Свяжитесь с нами",
+contactDesc:"Есть вопросы о грузоперевозках из Китая в Армению? Свяжитесь с Bellisa Logistics, чтобы обсудить возможности сотрудничества.",
+contactEmailLabel:"Электронная почта",contactEmailValue:"Добавьте email компании",
+contactPhoneLabel:"Номер телефона",contactPhoneValue:"Добавьте номер телефона компании",
+contactDirectionLabel:"Основное направление перевозок",
+footerDesc:"Bellisa Logistics — организация грузоперевозок из Китая в Армению. Индивидуальный подход, прозрачное сотрудничество и логистические решения.",
+footerLinksTitle:"Быстрые ссылки",footerDirectionTitle:"Наше направление",footerCargo:"Грузоперевозки",
+emailWarning:"Отправка запросов ещё не настроена. Необходимо добавить email компании.",
+emailSubject:"Запрос на грузоперевозку — Bellisa Logistics",
+emailGreeting:"Здравствуйте,",
+emailIntro:"Я хотел(а) бы получить расчёт стоимости грузоперевозки."
+}
+};
+
+/* COMPANY DETAILS — ADD REAL INFORMATION */
+const COMPANY_EMAIL = "";
+const COMPANY_PHONE = "";
+
+let currentLanguage = "hy";
+
+function changeLanguage(lang) {
+  if (!translations[lang]) lang = "hy";
+  currentLanguage = lang;
+  const t = translations[lang];
+
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.dataset.i18n;
+    if (Object.prototype.hasOwnProperty.call(t,key)) {
+      el.textContent = t[key];
+    }
+  });
+
+  const heroTitle = document.querySelector('[data-i18n-html="heroTitle"]');
+  if (heroTitle) heroTitle.innerHTML = t.heroTitle;
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.dataset.i18nPlaceholder;
+    if (t[key]) el.placeholder = t[key];
+  });
+
+  if (COMPANY_EMAIL) {
+    document.getElementById("contactEmail").textContent = COMPANY_EMAIL;
+  }
+  if (COMPANY_PHONE) {
+    document.getElementById("contactPhone").textContent = COMPANY_PHONE;
+  }
+
+  document.querySelectorAll(".languages button").forEach(btn => {
+    const active = btn.dataset.lang === lang;
+    btn.classList.toggle("active",active);
+    btn.setAttribute("aria-pressed",String(active));
+  });
+
+  try {
+    localStorage.setItem("bellisa-language",lang);
+  } catch(e) {}
+}
+
+document.querySelectorAll(".languages button").forEach(btn => {
+  btn.addEventListener("click",() => changeLanguage(btn.dataset.lang));
+});
+
+let savedLanguage = "hy";
+try {
+  savedLanguage = localStorage.getItem("bellisa-language") || "hy";
+} catch(e) {}
+changeLanguage(savedLanguage);
+
+/* MOBILE MENU */
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click",() => {
+  const opened = navLinks.classList.toggle("active");
+  menuToggle.setAttribute("aria-expanded",String(opened));
+  menuToggle.textContent = opened ? "✕" : "☰";
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click",() => {
+    navLinks.classList.remove("active");
+    menuToggle.setAttribute("aria-expanded","false");
+    menuToggle.textContent = "☰";
+  });
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+/* QUOTE REQUEST */
+document.getElementById("quoteForm").addEventListener("submit",function(e) {
+  e.preventDefault();
+
+  const t = translations[currentLanguage];
+
+  if (!COMPANY_EMAIL) {
+    alert(t.emailWarning);
+    return;
+  }
+
+  const getValue = id => document.getElementById(id).value.trim();
+  const cargoSelect = document.getElementById("cargoType");
+  const cargoLabel = cargoSelect.selectedIndex > 0
+    ? cargoSelect.options[cargoSelect.selectedIndex].textContent
+    : "";
+
+  const lines = [
+    t.emailGreeting,
+    "",
+    t.emailIntro,
+    "",
+    t.fieldName + ": " + getValue("clientName"),
+    t.fieldPhone + ": " + getValue("clientPhone"),
+    t.fieldCargo + ": " + cargoLabel,
+    t.fieldWeight + ": " + getValue("cargoWeight"),
+    t.fieldCity + ": " + getValue("cargoCity"),
+    "",
+    t.fieldMessage + ":",
+    getValue("cargoMessage")
+  ];
+
+  window.location.href =
+    "mailto:" + COMPANY_EMAIL +
+    "?subject=" + encodeURIComponent(t.emailSubject) +
+    "&body=" + encodeURIComponent(lines.join("\n"));
+});
+</script>
+
+</body>
+</html>
